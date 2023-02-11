@@ -4,6 +4,9 @@ const primaryColor = 0xFF2d3e50;
 const secondaryColor = 0xFF74b8ff;
 const primaryTextColor = 0xFFabb3bd;
 const secondaryTextColor = 0xFF687687;
+const weatherDialogColor = 0xFF44688c;
+const weatherDialogSecondaryColor = 0xFFf1f2f6;
+const weatherDialogTextColor = 0xFFf9fafe;
 
 final ThemeData appTheme = ThemeData(
   primaryColor: const Color(primaryColor),

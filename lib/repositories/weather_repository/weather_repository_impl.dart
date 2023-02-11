@@ -54,7 +54,7 @@ class WeatherRepositoryImpl extends WeatherRepository {
             place: weatherPlace,
             description: data['weather'][0]['description'],
             timestamp: data['dt'],
-            temperature: data['main']['temp'],
+            temperature: (data['main']['temp']).toInt(),
             pressure: data['main']['pressure'],
             icon: data['weather'][0]['icon'],
           ),

@@ -1,7 +1,7 @@
 class Weather {
   final String place;
   final int timestamp;
-  final double temperature;
+  final int temperature;
   final String description;
   final int pressure;
   final String icon;
