@@ -1,41 +1,41 @@
 class AnimationUtils {
   static String convertApiImageTypeToAnimationPath(String imageType) {
     switch (imageType) {
-      case '01d.png':
+      case '01d':
         return 'assets/animations/sun-animation.json';
-      case '02d.png':
+      case '02d':
         return 'assets/animations/sun-clouds-animation.json';
-      case '03d.png':
+      case '03d':
         return 'assets/animations/clouds-animation.json';
-      case '04d.png':
+      case '04d':
         return 'assets/animations/clouds-animation.json';
-      case '09d.png':
+      case '09d':
         return 'assets/animations/raining-animation.json';
-      case '10d.png':
+      case '10d':
         return 'assets/animations/raining-animation.json';
-      case '11d.png':
+      case '11d':
         return 'assets/animations/storm-animation.json';
-      case '13d.png':
+      case '13d':
         return 'assets/animations/snowing-animation.json';
-      case '50d.png':
+      case '50d':
         return 'assets/animations/snowing-animation.json';
-      case '01n.png':
+      case '01n':
         return 'assets/animations/sun-animation.json';
-      case '02n.png':
+      case '02n':
         return 'assets/animations/sun-clouds-animation.json';
-      case '03n.png':
+      case '03n':
         return 'assets/animations/clouds-animation.json';
-      case '04n.png':
+      case '04n':
         return 'assets/animations/clouds-animation.json';
-      case '09n.png':
+      case '09n':
         return 'assets/animations/raining-animation.json';
-      case '10n.png':
+      case '10n':
         return 'assets/animations/raining-animation.json';
-      case '11n.png':
+      case '11n':
         return 'assets/animations/storm-animation.json';
-      case '13n.png':
+      case '13n':
         return 'assets/animations/snowing-animation.json';
-      case '50n.png':
+      case '50n':
         return 'assets/animations/snowing-animation.json';
       default:
         return 'assets/animations/clouds-animation.json';

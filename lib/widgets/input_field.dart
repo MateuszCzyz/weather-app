@@ -9,9 +9,11 @@ class InputField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IntrinsicWidth(
-      stepWidth: double.infinity,
+    return SizedBox(
+      width: double.infinity,
+      height: 55,
       child: TextField(
+        textAlignVertical: TextAlignVertical.center,
         onSubmitted: (_) {
           BlocProvider.of<WeatherBloc>(context)
               .add(GetWeatherByPlace(city: inputController.text));
@@ -19,6 +21,7 @@ class InputField extends StatelessWidget {
         controller: inputController,
         style: const TextStyle(color: Color(primaryTextColor)),
         decoration: InputDecoration(
+            isDense: false,
             prefixIcon: const Icon(
               Icons.search,
               color: Color(secondaryTextColor),

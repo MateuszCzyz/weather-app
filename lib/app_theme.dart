@@ -19,16 +19,16 @@ final ThemeData appTheme = ThemeData(
   ),
   inputDecorationTheme: InputDecorationTheme(
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(8),
       borderSide: const BorderSide(
-        width: 3,
+        width: 2.5,
         color: Color(secondaryColor),
       ),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(8),
       borderSide: const BorderSide(
-        width: 2,
+        width: 2.5,
         color: Color(secondaryColor),
       ),
     ),
