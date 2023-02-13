@@ -9,9 +9,8 @@ class Loading extends WeatherState {}
 
 class SuccessResult extends WeatherInitial {
   final List<Weather> weatherData;
-  final List<Pollution> pollutionData;
 
-  SuccessResult({required this.weatherData, required this.pollutionData});
+  SuccessResult({required this.weatherData});
 }
 
 class FailureResult extends WeatherState {

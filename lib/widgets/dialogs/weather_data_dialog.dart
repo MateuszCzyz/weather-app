@@ -9,12 +9,10 @@ import 'package:weather_app/utils/image_utils.dart';
 
 class WeatherDataDialog extends StatelessWidget {
   final List<Weather> weatherData;
-  final List<Pollution> pollutionData;
 
   const WeatherDataDialog({
     super.key,
     required this.weatherData,
-    required this.pollutionData,
   });
 
   @override
@@ -42,7 +40,6 @@ class WeatherDataDialog extends StatelessWidget {
                     ),
                     WeatherDialogCurrentDayData(
                       weatherData: weatherData,
-                      pollutionData: pollutionData,
                     ),
                   ]),
             ),
@@ -50,7 +47,6 @@ class WeatherDataDialog extends StatelessWidget {
           Flexible(
             child: WeatherDialogFutureDaysData(
               weatherData: weatherData,
-              pollutionData: pollutionData,
             ),
           )
         ]),
@@ -113,12 +109,10 @@ class WeatherDialogAnimationIcon extends StatelessWidget {
 
 class WeatherDialogCurrentDayData extends StatelessWidget {
   final List<Weather> weatherData;
-  final List<Pollution> pollutionData;
 
   const WeatherDialogCurrentDayData({
     super.key,
     required this.weatherData,
-    required this.pollutionData,
   });
 
   @override
@@ -164,12 +158,10 @@ class WeatherDialogCurrentDayData extends StatelessWidget {
 class WeatherDialogFutureDaysData extends StatelessWidget {
   static const int _futureDaysNumber = 5;
   final List<Weather> weatherData;
-  final List<Pollution> pollutionData;
 
   const WeatherDialogFutureDaysData({
     super.key,
     required this.weatherData,
-    required this.pollutionData,
   });
 
   @override

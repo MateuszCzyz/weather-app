@@ -3,7 +3,6 @@ import 'package:meta/meta.dart';
 import 'package:weather_app/exceptions/api_exception.dart';
 import 'package:weather_app/exceptions/geolocation_exception.dart';
 import 'package:weather_app/exceptions/validation_exception.dart';
-import 'package:weather_app/models/pollution.dart';
 import 'package:weather_app/models/weather.dart';
 import 'package:weather_app/repositories/location_repository/location_repository.dart';
 import 'package:weather_app/repositories/weather_repository/weather_repository.dart';
@@ -34,13 +33,8 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
 
         List<Weather> weatherData =
             await weatherRepository.getWeatherData(location: location!);
-        List<Pollution> pollutionData =
-            await weatherRepository.getPollutionData(location: location);
 
-        emit(SuccessResult(
-          weatherData: weatherData,
-          pollutionData: pollutionData,
-        ));
+        emit(SuccessResult(weatherData: weatherData));
       } catch (exception) {
         String exceptionMessage =
             'Could not get information about weather, try it again later or restart the application';

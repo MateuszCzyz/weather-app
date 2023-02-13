@@ -36,10 +36,8 @@ class HomeScreen extends StatelessWidget {
             Navigator.of(context).pop();
             showDialog(
                 context: context,
-                builder: (_) => WeatherDataDialog(
-                      weatherData: state.weatherData,
-                      pollutionData: state.pollutionData,
-                    ));
+                builder: (_) =>
+                    WeatherDataDialog(weatherData: state.weatherData));
             return;
           }
         },
